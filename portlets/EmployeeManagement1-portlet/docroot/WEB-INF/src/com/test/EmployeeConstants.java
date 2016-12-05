@@ -1,0 +1,49 @@
+package com.test;
+
+public interface EmployeeConstants {
+
+String EMPLOYEE_PARAM_ID="employeeId";
+String DELETE_PARAM_ID="deleteId";
+String EDIT_PARAM_ID="editId";
+String EMPLOYEE_PARAM_ADD="addEmployee";
+String COUNTRY_LIST="countryList";
+String EMPLOYEE_COUNT_VALUE="EmployeecountValue";
+String ORDER_BY_COL="orderByCol";
+String ORDER_BY_TYPE="orderByType";
+String EMPLOYEE_LIST_VALUE="EmployeelistValue";
+String COLUMN_ORDER_ASC="asc";
+String COLUMN_ORDER_DESC="desc";
+String INSERT_EMPLOYEE_SUCCESSFUL="insert-employee-successful";
+String DISPLAY_PAGE_ERROR="display-page-error";
+String UPDATE_EMPLOYEE_SUCCESSFUL="update-employee-successful";
+String UPDATE_EMPLOYEE_ERROR="update-employee-error";
+String REMOVE_EMPLOYEE_SUCCESSFUL="remove-employee-successful";
+String EMPLOYEE_DELETE_ERROR="employee-delete-error";
+String EDIT_EMPLOYEE_PAGE="edit-employee-page";
+String MM_DD_YYYY="MM/dd/yyyy";
+String EMPLOYEE_NAME="name";
+String EMPLOYEE_AGE="age";
+String BIRTH_DATE="birthDate";
+String JOINING_DATE="joiningDate";
+String DEPARTMENT="department";
+String EMAIL_ID="emailId";
+String COUNTRIES="countries";
+String EDIT_PARAM="edit";
+String EDIT_EMPLOYEE="editEmployee";
+String EMPLOYEE_PARAM_EDIT_RECORD="editRecord";
+String EMPLOYEE_PARAM_EMPTY_LIST="there-are-no-employees";
+String EMPLOYEE_PARAM_SEARCH_CONTAINER="employeeRecordsSearchContainer";
+String VIEW_EMPLOYEE_ERROR="employee-view-error";
+String EMAIL_ID_ALREADY_REGISTERED="emailId-already-registered";
+String EMPLOYEE_RECORD_ERROR="add-or-edit-record-error";
+String EMPLOYEE_PARAM_BIRTHYEAR="birthYear";
+String EMPLOYEE_PARAM_BIRTHMONTH="birthMonth";
+String EMPLOYEE_PARAM_BIRTHDAY="birthDay";
+String EMPLOYEE_PARAM_JOININGYEAR="joiningYear";
+String EMPLOYEE_PARAM_JOININGMONTH="joiningMonth";
+String EMPLOYEE_PARAM_JOININGDAY="joiningDay";
+String EMPLOYEE_PARAM_DATE_FORMAT="dd/MM/yyyy";
+String EMPLOYEE_PARAM_DATE_ERROR="invalid-date-error";
+String EMPLOYEE_PARAM_PAGE_REDIRECT="pageRedirect";
+String EMPLOYEE_PARAM_ERROR="unexpected-error-occured";
+}

@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+
+<model-hints>
+	<model name="com.knowarth.service.model.Employee">
+		<field name="employeeId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="companyId" type="long" />
+		<field name="userId" type="long" />
+		<field name="userName" type="String" />
+		<field name="employeeName" type="String" />
+		<field name="employeeEmailId" type="String" />
+		<field name="stateId" type="long" />
+	</model>
+	<model name="com.knowarth.service.model.IndianState">
+		<field name="stateId" type="long" />
+		<field name="stateName" type="String" />
+	</model>
+	<model name="com.knowarth.service.model.patient">
+		<field name="patientId" type="long" />
+		<field name="patientName" type="String" />
+		<field name="patientEmailId" type="String" />
+		<field name="patientAge" type="long" />
+	</model>
+</model-hints>

@@ -1,0 +1,1 @@
+create index IX_5B9FA629 on PatientDetails (patientEmailId);

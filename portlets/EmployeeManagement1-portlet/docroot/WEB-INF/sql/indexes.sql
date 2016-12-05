@@ -1,0 +1,1 @@
+create index IX_EFA9BBC2 on Employee_Employee (emailId);

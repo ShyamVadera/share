@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE routes PUBLIC "-//Liferay//DTD Friendly URL Routes 6.0.0//EN" "http://www.liferay.com/dtd/liferay-friendly-url-routes_6_0_0.dtd">
+
+<routes>
+ <route>
+  <pattern>/view</pattern>
+  <implicit-parameter name="p_p_id">employeemanagement_WAR_MRBSportlet</implicit-parameter>
+  <implicit-parameter name="p_p_lifecycle">0</implicit-parameter>
+  <implicit-parameter name="p_p_state">normal</implicit-parameter>
+  <implicit-parameter name="p_p_mode">view</implicit-parameter>
+<implicit-parameter name="request">searchEmployee</implicit-parameter>
+ </route>
+ <route>
+ <pattern>/searchEmployee</pattern>
+ <implicit-parameter name="p_p_id">employeemanagement_WAR_MRBSportlet</implicit-parameter>
+ <implicit-parameter name="p_p_lifecycle">1</implicit-parameter>
+ <implicit-parameter name="p_p_state">normal</implicit-parameter>
+<implicit-parameter name="p_p_mode">view</implicit-parameter> 
+<implicit-parameter name="request">searchEmp</implicit-parameter>
+ </route>
+ <route>
+ <pattern>/addEmployee</pattern>
+<implicit-parameter name="p_p_id">employeemanagement_WAR_MRBSportlet</implicit-parameter>
+  <implicit-parameter name="p_p_lifecycle">0</implicit-parameter>
+  <implicit-parameter name="p_p_state">normal</implicit-parameter>
+  <implicit-parameter name="p_p_mode">view</implicit-parameter>
+<implicit-parameter name="request">addEmployee</implicit-parameter>
+ </route>
+ <route>
+ <pattern>/deleteEmployee</pattern>
+ <implicit-parameter name="p_p_id">employeemanagement_WAR_MRBSportlet</implicit-parameter>
+ <implicit-parameter name="p_p_lifecycle">1</implicit-parameter>
+ <implicit-parameter name="p_p_state">normal</implicit-parameter>
+<implicit-parameter name="p_p_mode">view</implicit-parameter> 
+</route>
+ </routes>
+ <!-- <route>
+  <pattern>/searchEmployee</pattern>
+  <implicit-parameter name="p_p_id">employeemanagement_WAR_MRBSportlet</implicit-parameter>
+  <implicit-parameter name="p_p_lifecycle">0</implicit-parameter>
+  <implicit-parameter name="p_p_state">normal</implicit-parameter>
+  <implicit-parameter name="p_p_mode">view</implicit-parameter>
+<implicit-parameter name="request">searchEmployee</implicit-parameter>
+ </route> -->

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<custom-sql>
+    <sql id="employeeEmailValidationSQLQuery" >
+<![CDATA[
+SELECT * FROM employee_employee WHERE employee_employee.employeeId!=? AND employee_employee.emailId=?
+]]>
+</sql>
+</custom-sql>

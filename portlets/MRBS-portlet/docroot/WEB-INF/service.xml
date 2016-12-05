@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 6.2.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_6_2_0.dtd">
+<service-builder package-path="com.knowarth.service">
+	<author>shyam.vadera</author>
+	<namespace>ab</namespace>
+
+	<entity name="Employee" table="Employee" local-service="true" remote-service="true">
+
+		<!-- PK fields -->
+
+		<column name="employeeId" type="long" primary="true" id-type="increment"/>
+
+		<!-- Group instance -->
+
+		<column name="groupId" type="long" />
+
+		<!-- Audit fields -->
+
+		<column name="companyId" type="long" />
+		<column name="userId" type="long" />
+		<column name="userName" type="String" />
+
+		<!-- Other fields -->
+
+		<column name="employeeName" type="String" />
+		<column name="employeeEmailId" type="String" />
+		<column name="stateId" type="long"></column>
+		<!-- Order -->
+
+		<order by="asc">
+			<order-column name="employeeId" />
+		</order>
+
+		<!-- Finder methods -->
+
+	</entity>
+	<entity name="IndianState" table="IndianState" local-service="true">
+	<column name="stateId" type="long" primary="true" id-type="increment"></column>
+	<column name="stateName" type="String"></column>
+	
+	</entity>
+	<entity name="patient" table="PatientDetails" local-service="true">
+	<column name="patientId" type="long" primary="true" id-type="increment"></column>
+	<column name="patientName" type="String"></column>
+	<column name="patientEmailId" type="String"></column>
+	<column name="patientAge" type="long"></column>
+	<finder return-type="patient" name="EmailId">
+	<finder-column name="patientEmailId"></finder-column>
+	</finder>
+	</entity>
+    <exceptions>
+        <exception>EmailIdAlreadyExists</exception>
+    </exceptions>
+</service-builder>

@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping default-lazy="false" auto-import="false">
+	<import class="com.knowarth.service.model.Employee" />
+	<import class="com.knowarth.service.model.IndianState" />
+	<import class="com.knowarth.service.model.patient" />
+	<class name="com.knowarth.service.model.impl.EmployeeImpl" table="Employee">
+		<cache usage="read-write" />
+		<id name="employeeId" type="long">
+			<generator class="increment" />
+		</id>
+		<property name="groupId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="companyId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="userId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="userName" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="employeeName" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="employeeEmailId" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="stateId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+	</class>
+	<class name="com.knowarth.service.model.impl.IndianStateImpl" table="IndianState">
+		<cache usage="read-write" />
+		<id name="stateId" type="long">
+			<generator class="increment" />
+		</id>
+		<property name="stateName" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+	</class>
+	<class name="com.knowarth.service.model.impl.patientImpl" table="PatientDetails">
+		<cache usage="read-write" />
+		<id name="patientId" type="long">
+			<generator class="increment" />
+		</id>
+		<property name="patientName" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="patientEmailId" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="patientAge" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence/orm http://java.sun.com/xml/ns/persistence/orm_1_0.xsd">
+	<persistence-unit-metadata>
+		<xml-mapping-metadata-complete/>
+		<persistence-unit-defaults>
+			<access>PROPERTY</access>
+		</persistence-unit-defaults>
+	</persistence-unit-metadata>
+	<mapped-superclass class="com.knowarth.service.model.impl.EmployeeModelImpl">
+		<attributes>
+			<id name="employeeId" />
+			<basic name="groupId" />
+			<basic name="companyId" />
+			<basic name="userId" />
+			<basic name="userName" />
+			<basic name="employeeName" />
+			<basic name="employeeEmailId" />
+			<basic name="stateId" />
+			<transient name="modelAttributes" />
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+			<transient name="userUuid" />
+		</attributes>
+	</mapped-superclass>
+	<mapped-superclass class="com.knowarth.service.model.impl.IndianStateModelImpl">
+		<attributes>
+			<id name="stateId" />
+			<basic name="stateName" />
+			<transient name="modelAttributes" />
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+		</attributes>
+	</mapped-superclass>
+	<mapped-superclass class="com.knowarth.service.model.impl.patientModelImpl">
+		<attributes>
+			<id name="patientId" />
+			<basic name="patientName" />
+			<basic name="patientEmailId" />
+			<basic name="patientAge" />
+			<transient name="modelAttributes" />
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+		</attributes>
+	</mapped-superclass>
+	<entity class="com.knowarth.service.model.impl.EmployeeImpl" name="Employee">
+		<table name="Employee" />
+		<attributes />
+	</entity>
+	<entity class="com.knowarth.service.model.impl.IndianStateImpl" name="IndianState">
+		<table name="IndianState" />
+		<attributes />
+	</entity>
+	<entity class="com.knowarth.service.model.impl.patientImpl" name="patient">
+		<table name="PatientDetails" />
+		<attributes />
+	</entity>
+</entity-mappings>
